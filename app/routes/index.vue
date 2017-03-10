@@ -5,7 +5,7 @@
       <div class="title level-item">Puppies For Adoption</div>
     </div>
     <div class="level-right">
-      <a class="button is-info level-item">this doesn't work yet!</a>
+      <router-link class="nav-item button is-info level-item" :to="{ name: 'new' }">Add A Pupper</router-link>
     </div>
     </div>
     <table class="table">
@@ -21,22 +21,22 @@
         <tr>
           <td>Bob</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
         <tr>
           <td>Luna</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
         <tr>
           <td>Bob</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
         <tr>
           <td>Luna</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
 
 
@@ -56,22 +56,22 @@
         <tr>
           <td>Bob</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
         <tr>
           <td>Luna</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
         <tr>
           <td>Bob</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
         <tr>
           <td>Luna</td>
           <td>1</td>
-          <td>don't read more</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
 
 

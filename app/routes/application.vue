@@ -2,11 +2,11 @@
   <div class="app">
     <nav class="nav">
       <div class="nav-left">
-        <router-link class="nav-item is-brand" :to="{ name: 'index' }">Index</router-link>
+        <router-link class="nav-item is-brand" :to="{ name: 'index' }">Puppies</router-link>
 
         <div class="nav-right">
-          <router-link class="nav-item" :to="{ name: 'index' }">Index</router-link>
-          <router-link class="nav-item" :to="{ name: 'new' }">New</router-link>
+          <router-link class="nav-item" :to="{ name: 'index' }">All Puppies</router-link>
+          <router-link class="nav-item" :to="{ name: 'new' }">Add A Puppy</router-link>
         </div>
     </nav>
 
@@ -27,9 +27,7 @@
                 </div>
                 <div class="media-right">
                   <div class="subtitle">Bob</div>
-                  <div class="subtitle">don't read more
-                    <!--<a href="#"></a>-->
-                  </div>
+                    <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
                 </div>
               </div>
             </div>
@@ -42,9 +40,7 @@
                 </div>
                 <div class="media-right">
                   <div class="subtitle">Luna</div>
-                  <div class="subtitle">don't read more
-                    <!--<a href="#"></a>-->
-                  </div>
+                  <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
                 </div>
               </div>
             </div>
@@ -57,9 +53,7 @@
                 </div>
                 <div class="media-right">
                   <div class="subtitle">Bob</div>
-                  <div class="subtitle">don't read more
-                    <!--<a href="#"></a>-->
-                  </div>
+                  <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
                 </div>
               </div>
             </div>
@@ -72,9 +66,7 @@
                 </div>
                 <div class="media-right">
                   <div class="subtitle">Luna</div>
-                  <div class="subtitle">don't read more
-                    <!--<a href="#"></a>-->
-                  </div>
+                  <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
                 </div>
               </div>
             </div>
