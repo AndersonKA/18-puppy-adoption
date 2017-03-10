@@ -6,13 +6,13 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 
 $c-blue: hsl(218, 71%, 53%);
-$c-primary: $c-blue;
-$c-white-bis: hsl(0, 0%, 98%);
+$primary: $c-blue;
+$white-bis: hsl(0, 0%, 98%);
 
 @import 'box-sizing';
 
 .nav {
-  background: $c-primary;
+  background: $primary;
 
   a.nav-item {
     color: $white-bis;
@@ -23,8 +23,8 @@ $c-white-bis: hsl(0, 0%, 98%);
   color: $white-bis;
 }
 
-
 .is-brand {
+  margin-left: 1rem;
   font-size: 1.2rem;
   font-weight: normal;
 }
