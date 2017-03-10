@@ -8,6 +8,7 @@
       <router-link class="nav-item button is-info level-item" :to="{ name: 'new' }">Add A Pupper</router-link>
     </div>
     </div>
+
     <table class="table">
       <thead>
         <tr>

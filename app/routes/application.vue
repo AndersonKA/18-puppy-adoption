@@ -18,7 +18,7 @@
             <p class="panel-heading">
               Adopt A Pupper
             </p>
-            <div class="panel-block">
+            <div class="panel-block" v-for="puppy in puppies">
               <div class="media">
                 <div class="media-left">
                   <div class="image is-64x64 is-square">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="media-right">
                   <div class="subtitle">Bob</div>
-                    <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
+                    <router-link class="subtitle primary" :to="{ name: 'detail', id: puppy.id }">read more</router-link>
                 </div>
               </div>
             </div>
@@ -77,8 +77,7 @@
 
       <div class="column is-two-thirds">
         <router-view></router-view>
-
-        </div> <!--2/3-->
+      </div>
 
 
 
