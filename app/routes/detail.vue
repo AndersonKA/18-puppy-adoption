@@ -52,17 +52,31 @@
 </template>
 
 <script>
+import store from '../store';
+import { findOne } from '../actions/puppy.js';
+
 export default {
   data() {
     return {
       formValues: {
-
+        currentPuppy: '',
       },
+      puppies: this.$select('puppies'),
     };
   },
 
-  methods: {
+  mounted() {
+    store.dispatch(findOne(this.$route.params.id));
+  },
 
+  watch: {
+    puppies: 'getPuppy',
+  },
+
+  methods: {
+    getPuppy() {
+      this.currentPuppy = this.puppies.find(puppy => puppy._id === this.$route.params.id);
+    },
   },
 };
 </script>
