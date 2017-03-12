@@ -88,10 +88,18 @@
 </template>
 
 <script>
+import store from '../store';
+import { findAll } from '../actions/puppy.js';
+
 export default {
   data() {
     return {
+      puppies: this.$select('puppies'),
     };
+  },
+
+  mounted() {
+    store.dispatch(findAll(''));
   },
 
   methods: {
