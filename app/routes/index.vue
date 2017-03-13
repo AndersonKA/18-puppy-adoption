@@ -22,7 +22,7 @@
         <tr>
           <td>{{ puppy.name }}</td>
           <td>{{ puppy.age }}</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail', id: puppy.id }">read more</router-link></td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail', params: { id: puppy.id } }">read more</router-link></td>
         </tr>
 
       </tbody>

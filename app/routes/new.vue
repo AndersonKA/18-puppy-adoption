@@ -57,7 +57,11 @@ export default {
   },
 
   methods: {
-
+    submit() {
+      store.dispatch(create(this.formValues)).then(() => {
+        this.$router.push({ name: 'index' });
+      });
+    },
   },
 };
 </script>
