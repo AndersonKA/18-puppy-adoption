@@ -73,9 +73,6 @@ export function update(id, formData) {
     });
 }
 
-// export function toggleAdopted(puppy) {
-//   return {
-//     type: 'PUPPY@UPDATE_COMPLETE',
-//     data
-//   };
-// }
+export function toggleAdopted(puppy) {
+  return update(puppy.id, { ...puppy, adopted: !puppy.adopted });
+}

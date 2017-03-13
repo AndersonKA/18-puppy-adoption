@@ -4,9 +4,10 @@
       <div class="title has-text-centered">
         <span class="dogname">{{ currentPuppy.name }} </span>
         <!--<button class="comics__read" @click="$emit('readmore', comic)">Read More</button>-->
-        <a href="#" class="button is-primary">
+        <a @click="adoptMe" href="#" class="button is-primary" v-bind:class="{ 'is-success': currentPuppy.adopted }">
           <span class="icon is-small fa fa-paw"></span>
-          <span>I'm Adopted</span>
+          <span v-if="currentPuppy.adopted">I'm Adopted</span>
+          <span v-else>I'm available!</span>
         </a>
       </div>
       <div class="columns">
@@ -55,7 +56,7 @@
 
 <script>
 import store from '../store';
-import { findOne } from '../actions/puppy.js';
+import { findOne, toggleAdopted } from '../actions/puppy.js';
 
 export default {
   data() {
@@ -78,6 +79,10 @@ export default {
     getPuppy() {
       this.currentPuppy = this.puppies.find(puppy => puppy.id == this.$route.params.id);
     },
+
+    adoptMe() {
+      store.dispatch(toggleAdopted(this.currentPuppy));
+    }
   },
 };
 </script>
