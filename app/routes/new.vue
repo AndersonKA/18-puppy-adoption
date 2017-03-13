@@ -26,7 +26,7 @@
       <p class="control">
         <input class="input" type="text" v-model="formValues.author">
       </p>
-      <label class="label">Image URL</label>
+      <label class="label">Image</label>
       <p class="control">
         <input class="input" type="text" v-model="formValues.image_url">
       </p>

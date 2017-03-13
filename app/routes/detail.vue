@@ -2,6 +2,7 @@
   <div class="app">
     <div class="title has-text-centered">
       <span class="dogname">Dodger</span>
+      <!--<button class="comics__read" @click="$emit('readmore', comic)">Read More</button>-->
       <a href="#" class="button is-primary">
         <span class="icon is-small fa fa-paw"></span>
         <span>I'm Adopted</span>

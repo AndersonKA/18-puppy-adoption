@@ -22,60 +22,21 @@
               <div class="media">
                 <div class="media-left">
                   <div class="image is-64x64 is-square">
-                    <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg" alt="">
+                    <img v-bind:src="puppy.image_url">
                   </div>
                 </div>
                 <div class="media-right">
-                  <div class="subtitle">Bob</div>
+                  <div class="subtitle">{{ puppy.name }}</div>
                     <router-link class="subtitle primary" :to="{ name: 'detail', id: puppy.id }">read more</router-link>
                 </div>
               </div>
             </div>
-            <div class="panel-block">
-              <div class="media">
-                <div class="media-left">
-                  <div class="image is-64x64 is-square">
-                    <img src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-21.jpg" alt="">
-                  </div>
-                </div>
-                <div class="media-right">
-                  <div class="subtitle">Luna</div>
-                  <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
-                </div>
-              </div>
-            </div>
-            <div class="panel-block">
-              <div class="media">
-                <div class="media-left">
-                  <div class="image is-64x64 is-square">
-                    <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg" alt="">
-                  </div>
-                </div>
-                <div class="media-right">
-                  <div class="subtitle">Bob</div>
-                  <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
-                </div>
-              </div>
-            </div>
-            <div class="panel-block">
-              <div class="media">
-                <div class="media-left">
-                  <div class="image is-64x64 is-square">
-                    <img src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-21.jpg" alt="">
-                  </div>
-                </div>
-                <div class="media-right">
-                  <div class="subtitle">Luna</div>
-                  <router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link>
-                </div>
-              </div>
-            </div>
-
 
         </div> <!--is 1/3-->
 
 
       <div class="column is-two-thirds">
+        <!--<character-item v-for="item in characters" v-bind:character="item"></character-item>-->
         <router-view></router-view>
       </div>
 

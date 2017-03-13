@@ -73,8 +73,8 @@ export function update(id, formData) {
     });
 }
 
-export function toggleAdopted(puppy) {
-  return {
-
-  };
-}
+// export function toggleAdopted(puppy) {
+//
+//
+//   };
+// }

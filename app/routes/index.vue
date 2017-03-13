@@ -18,28 +18,12 @@
         </tr>
       </thead>
 
-      <tbody>
+      <tbody v-for="puppy in puppies">
         <tr>
-          <td>Bob</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
+          <td>{{ puppy.name }}</td>
+          <td>{{ puppy.age }}</td>
+          <td><router-link class="subtitle primary" :to="{ name: 'detail', id: puppy.id }">read more</router-link></td>
         </tr>
-        <tr>
-          <td>Luna</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
-        </tr>
-        <tr>
-          <td>Bob</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
-        </tr>
-        <tr>
-          <td>Luna</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
-        </tr>
-
 
       </tbody>
     </table>
@@ -53,28 +37,12 @@
         </tr>
       </thead>
 
-      <tbody>
+      <tbody v-for="puppy in puppies">
         <tr>
-          <td>Bob</td>
-          <td>1</td>
+          <td>{{ puppy.name }}</td>
+          <td>{{ puppy.age }}</td>
           <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
         </tr>
-        <tr>
-          <td>Luna</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
-        </tr>
-        <tr>
-          <td>Bob</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
-        </tr>
-        <tr>
-          <td>Luna</td>
-          <td>1</td>
-          <td><router-link class="subtitle primary" :to="{ name: 'detail' }">read more</router-link></td>
-        </tr>
-
 
       </tbody>
     </table>
