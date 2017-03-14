@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="app">
+    <form v-on:submit.prevent="add(formValues)">
     <div class="title">Found a Pupper? We Can Help</div>
       <label class="label">Name</label>
       <p class="control">
@@ -24,7 +25,7 @@
       </p>
       <label class="label">Breed</label>
       <p class="control">
-        <input class="input" type="text" v-model="formValues.author">
+        <input class="input" type="text" v-model="formValues.breed">
       </p>
       <label class="label">Image</label>
       <p class="control">
@@ -36,11 +37,14 @@
       </p>
       <button class="button is-normal">Back</button>
       <button class="button is-info">Submit</button>
-
+    </form>
   </div> <!--app-->
 </template>
 
 <script>
+import store from '../store';
+import { create } from '../actions/puppy.js';
+
 export default {
   data() {
     return {
@@ -57,8 +61,8 @@ export default {
   },
 
   methods: {
-    submit() {
-      store.dispatch(create(this.formValues)).then(() => {
+    add(data) {
+      store.dispatch(create(data)).then(() => {
         this.$router.push({ name: 'index' });
       });
     },

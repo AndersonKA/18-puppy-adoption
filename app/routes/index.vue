@@ -9,6 +9,8 @@
     </div>
     </div>
 
+    <!--<div class="subtitle">All doggos have been adopted!</div>-->
+
     <table class="table">
       <thead>
         <tr>
@@ -18,7 +20,7 @@
         </tr>
       </thead>
 
-      <tbody v-for="puppy in puppies">
+      <tbody v-if="!puppy.adopted" v-for="puppy in puppies">
         <tr>
           <td>{{ puppy.name }}</td>
           <td>{{ puppy.age }}</td>
@@ -37,7 +39,7 @@
         </tr>
       </thead>
 
-      <tbody v-for="puppy in puppies">
+      <tbody v-if="puppy.adopted" v-for="puppy in puppies">
         <tr>
           <td>{{ puppy.name }}</td>
           <td>{{ puppy.age }}</td>

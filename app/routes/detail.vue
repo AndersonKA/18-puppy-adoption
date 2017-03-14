@@ -3,7 +3,6 @@
     <div v-if="currentPuppy">
       <div class="title has-text-centered">
         <span class="dogname">{{ currentPuppy.name }} </span>
-        <!--<button class="comics__read" @click="$emit('readmore', comic)">Read More</button>-->
         <a @click="adoptMe" href="#" class="button is-primary" v-bind:class="{ 'is-success': currentPuppy.adopted }">
           <span class="icon is-small fa fa-paw"></span>
           <span v-if="currentPuppy.adopted">I'm Adopted</span>

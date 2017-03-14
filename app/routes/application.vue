@@ -13,7 +13,7 @@
     <div class="container">
       <div class="section">
       <div class="columns">
-        <div class="column is-one-third">
+        <div class="column is-one-third-desktop is-half-tablet">
           <nav class="panel">
             <p class="panel-heading">
               Adopt A Pupper
@@ -35,8 +35,7 @@
         </div> <!--is 1/3-->
 
 
-      <div class="column is-two-thirds">
-        <!--<character-item v-for="item in characters" v-bind:character="item"></character-item>-->
+      <div class="column is-two-thirds-desktop is-half-tablet">
         <router-view></router-view>
       </div>
 
